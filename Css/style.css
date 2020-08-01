@@ -2,14 +2,114 @@ body {
     background-color: #ddc9b4;
 }
 
-main #welcome-section {
-    background-color: #c17c74;
-}
- #navbar {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
+header #navbar {
+    position: fixed;
+    background-color: #2a3d45;
     align-items: center;
     justify-content: space-between;
     padding: 0.5rem 1rem;
+    width: 100%; 
  }
+
+header #navbar ul {
+    display: flex;
+    list-style-type: none; 
+}
+
+header #navbar ul .nav-link {
+    text-decoration: none;
+    margin-right: 40px;
+    color: #ddc9b4;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+main #welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(62deg, #c17c74 0%, #bcac9b 100%);
+}
+
+main #welcome-section h1 {
+    color: #2a3d45;
+    font-size: 100px;
+    font-family: cursive;
+}
+
+main #welcome-section p {
+    color: #7a6c5d;
+    font-size: 20px;
+    margin-top: -80px;
+}
+
+main #projects {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+}
+
+main #projects .project-tile {
+    display: flex;
+    flex-direction: row;
+    border-top: 10px inset #bcac9b;
+    border-right: 5px inset #c17c74;
+    border-bottom: 5px inset #2a3d45;
+    border-left: 10px inset #7a6c5d;
+    margin-top: 100px;
+    margin-left: 80px;
+    width: 500px;
+    height: 375px;
+}
+
+main #projects .project-tile h5 {
+    font-size: 30px;
+    color: #2a3d45;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 10px;
+}
+main #projects .project-tile img {
+    margin: 15px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 450px;
+}
+
+main #projects .project-tile div a {
+    background-color: #c17c74;
+    text-decoration: none;
+    color: #2a3d45;
+    padding: 14px 25px;
+    text-align: center;
+    display: inline-block;
+    width: 450px;
+    font-size: 30px;
+    font-family: cursive;
+}
+
+main #porfile {
+    display: flex;
+    margin: 40px;
+    justify-content: center;
+}
+
+main #porfile img {
+    width: 40px;
+
+}
+main #porfile #profile-link {
+    text-decoration: none;
+    font-size: 30px;
+    color: #2a3d45;
+    margin-left: 20px;
+}
+
+footer {
+    text-align: center;
+}
